@@ -40,6 +40,37 @@ This laboratory investigates the trade-off surface between predictive accuracy a
 ### Pareto Frontier Visualizations
 ![Tradeoff Plots](results/tradeoff_plots.png)
 
+### Primary Handwritten Mathematical Derivations & Diagrams
+Below are the primary handwritten derivations for parameter totals and FLOPs across the model architectures:
+
+![Handwritten FLOPs and Parameter Derivations](results/handwritten_calculations.jpg)
+
+#### Transcribed Mathematical Step-by-Step Breakdown
+
+1. **Multi-Layer Perceptron (Input $28 \times 28 = 784$):**
+   - **Layer 1 (Linear: $784 \rightarrow 128$):**
+     - Weights: $784 \times 128 = 100,352$, Biases: $128$. (Subtotal: $100,480$)
+     - FLOPs: $2 \times 784 \times 128 = 200,704 \text{ FLOPs}$
+   - **Layer 2 (Linear: $128 \rightarrow 64$):**
+     - Weights: $128 \times 64 = 8,192$, Biases: $64$. (Subtotal: $8,256$)
+     - FLOPs: $2 \times 128 \times 64 = 16,384 \text{ FLOPs}$
+   - **Layer 3 (Output: $64 \rightarrow 10$):**
+     - Weights: $64 \times 10 = 640$, Biases: $10$. (Subtotal: $650$)
+     - FLOPs: $2 \times 64 \times 10 = 1,280 \text{ FLOPs}$
+   - **Total Parameters:** $100,480 + 8,256 + 650 = 109,386 \text{ parameters}$
+   - **Total Network Forward FLOPs:** $200,704 + 16,384 + 1,280 = 218,368 \text{ FLOPs}$
+
+2. **Convolutional Neural Network (Conv2D MNIST-like):**
+   - **Input Specification:** $28 \times 28 \times 1$
+   - **Conv Configuration:** 32 filters, $3 \times 3$ kernel, padding = 1
+   - **Output Dimensions:** $28 \times 28 \times 32$
+   - **Parameter Count:** $(3 \times 3 \times 1 \times 32) + 32 = 320 \text{ parameters}$
+   - **FLOPs:** $2 \times 28 \times 28 \times 1 \times 32 \times 3 \times 3 = 451,584 \text{ FLOPs}$
+
+3. **Architectural Schematics & Learning Curves:**
+   - Topology graph illustrating dense interconnected feedforward layers ($784 \rightarrow 128 \rightarrow 64 \rightarrow 10$).
+   - Empirical loss trajectory analysis highlighting non-linear activation stability.
+
 ### Explaining Profiler Gaps (FLOPs vs. MACs)
 The mathematical difference between hand derivations and `thop.profile` is explained by:
 1. **Multiply-Accumulate Convention:** `thop` measures MACs. Each MAC comprises an addition and multiplication, equaling 2 FLOPs ($2 \times \text{MACs} = \text{FLOPs}$).
