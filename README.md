@@ -21,7 +21,8 @@ This coursework repository explores the intersection of deep learning algorithms
 ├── lab01/    # Diagnostic classification benchmarks and execution profiles
 ├── lab02/    # Scratch neural network engine and gradient check logs
 ├── lab03/    # Deep architectures, handwritten calculations, and Pareto frontier curves
-└── lab04/    # Production data transformer, audit reports, and serialized pipeline
+├── lab04/    # Production data transformer, audit reports, and serialized pipeline
+└── lab05/    # Tape-free scalar autodiff, PyTorch validation, graph tracing & memory strides
 ```
 
 ## Quickstart Guide

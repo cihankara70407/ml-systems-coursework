@@ -1,0 +1,41 @@
+{
+  "student": "Cihan Karayigit (70407)",
+  "latencies_microsec": {
+    "eager": 257.8281000023708,
+    "traced": 253.91059997491539,
+    "compiled": null,
+    "speedup_traced": 1.0154286588580486,
+    "speedup_compiled": null
+  },
+  "memory_strides": {
+    "contiguous": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "torch.float32",
+      "stride": [
+        2048,
+        1
+      ],
+      "is_contiguous": true
+    },
+    "non_contiguous": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "torch.float32",
+      "stride": [
+        1,
+        2048
+      ],
+      "is_contiguous": false
+    },
+    "reduction_time_contiguous_ms": 1.0266216001473367,
+    "reduction_time_non_contiguous_ms": 2.520936000160873,
+    "stride_slowdown_factor": 2.455564932394836,
+    "contiguous_reallocation_cost_ms": 27.974855200387537
+  },
+  "traced_ir_snippet": "graph(%self.1 : __torch__.DifferentiatedMoonsModel,\n      %x : Float(32, 2, strides=[2, 1], requires_grad=0, device=cpu)):\n  %sigmoid : __torch__.torch.nn.modules.activation.Sigmoid = prim::GetAttr[name=\"sigmoid\"](%self.1)\n  %affine_2 : __torch__.torch.nn.modules.linear.___torch_mangle_0.Linear = prim::GetAttr[name=\"affine_2\"](%self.1)\n  %relu : __torch__.torch.nn.modules.activation.ReLU = prim::GetAttr[name=\"relu\"](%self.1)\n  %affine_1 : __torch__.torch.nn.modules.linear.Linear = prim::GetAttr[name=\"affine_1\"](%self.1)\n  %bias.1 : Tensor = prim::GetAttr[name=\"bias\"](%affine_1)\n  %weight.1 : Tensor = prim::GetAttr[name=\"weight\"](%affine_1)\n  %input.1 : Float(32, 8, strides=[8, 1], requires_grad=1, device=cpu) = aten::linear(%x, %weight.1, %bias.1), scope: __module.affine_1 # C:\\Users\\Tuan\\"
+}

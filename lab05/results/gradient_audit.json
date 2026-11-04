@@ -1,0 +1,108 @@
+{
+  "student": "Cihan Karayigit (70407)",
+  "expression": "((a * b + c) ** 2).relu().sum()",
+  "forward_val_custom": 66.38122500000001,
+  "forward_val_pytorch": 66.38122500000001,
+  "max_pytorch_delta": 0.0,
+  "max_finite_difference_delta": 9.840615433631683e-08,
+  "threshold": 1e-06,
+  "status": "PASSED",
+  "telemetry": [
+    {
+      "symbol": "a_0",
+      "custom_grad": 7.574999999999999,
+      "pytorch_grad": 7.574999999999999,
+      "finite_diff_grad": 7.575000040560553,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 4.056055402656966e-08
+    },
+    {
+      "symbol": "a_1",
+      "custom_grad": -49.28000000000001,
+      "pytorch_grad": -49.28000000000001,
+      "finite_diff_grad": -49.28000009840616,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 9.840615433631683e-08
+    },
+    {
+      "symbol": "a_2",
+      "custom_grad": -0.4800000000000004,
+      "pytorch_grad": -0.4800000000000004,
+      "finite_diff_grad": -0.4799999686611045,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 3.133889592277228e-08
+    },
+    {
+      "symbol": "a_3",
+      "custom_grad": 1.8479999999999988,
+      "pytorch_grad": 1.8479999999999988,
+      "finite_diff_grad": 1.8479999397413849,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 6.02586138764849e-08
+    },
+    {
+      "symbol": "b_0",
+      "custom_grad": -11.362499999999999,
+      "pytorch_grad": -11.362499999999999,
+      "finite_diff_grad": -11.36250006084083,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 6.084083103985449e-08
+    },
+    {
+      "symbol": "b_1",
+      "custom_grad": 26.950000000000003,
+      "pytorch_grad": 26.950000000000003,
+      "finite_diff_grad": 26.949999920589107,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 7.941089563701098e-08
+    },
+    {
+      "symbol": "b_2",
+      "custom_grad": 0.10000000000000009,
+      "pytorch_grad": 0.10000000000000009,
+      "finite_diff_grad": 0.1000000082740371,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 8.274037011091195e-09
+    },
+    {
+      "symbol": "b_3",
+      "custom_grad": -5.207999999999997,
+      "pytorch_grad": -5.207999999999997,
+      "finite_diff_grad": -5.208000004586211,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 4.586214075175121e-09
+    },
+    {
+      "symbol": "c_0",
+      "custom_grad": -5.05,
+      "pytorch_grad": -5.05,
+      "finite_diff_grad": -5.050000027040369,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 2.7040369054986968e-08
+    },
+    {
+      "symbol": "c_1",
+      "custom_grad": -15.400000000000002,
+      "pytorch_grad": -15.400000000000002,
+      "finite_diff_grad": -15.399999995224789,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 4.77521311381679e-09
+    },
+    {
+      "symbol": "c_2",
+      "custom_grad": 0.20000000000000018,
+      "pytorch_grad": 0.20000000000000018,
+      "finite_diff_grad": 0.2000000165480742,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 1.654807402218239e-08
+    },
+    {
+      "symbol": "c_3",
+      "custom_grad": 1.6799999999999988,
+      "pytorch_grad": 1.6799999999999988,
+      "finite_diff_grad": 1.6799999968952761,
+      "abs_diff_pytorch": 0.0,
+      "abs_diff_fd": 3.1047227011526957e-09
+    }
+  ]
+}
