@@ -1,0 +1,19 @@
+{
+  "student": "Cihan Karayigit (70407)",
+  "model_architecture": "DeepFashionTeacherNet",
+  "parameters": 1158602,
+  "train_time_sec": 230.79028579994338,
+  "test_accuracy": 0.883,
+  "latency_profile": {
+    "mean_latency_ms": 87.28150200040545,
+    "median_latency_ms": 89.20429996214807,
+    "std_latency_ms": 20.36091143303294,
+    "throughput_fps": 733.2596086591486
+  },
+  "storage_profile": {
+    "raw_dense_kb": 4536.8203125,
+    "compressed_sparse_kb": 4204.267578125,
+    "storage_compression_ratio": 1.0790988509164563,
+    "measured_sparsity": 0.0
+  }
+}

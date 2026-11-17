@@ -157,3 +157,4 @@ class AutoDiffScalar:
         # Traverse reverse topological schedule
         for vertex in reversed(sorted_nodes):
             vertex._grad_fn()
+

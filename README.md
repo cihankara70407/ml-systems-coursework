@@ -15,6 +15,8 @@ This coursework repository explores the intersection of deep learning algorithms
 - **Laboratory 02 (Deep Learning Primer):** Complete derivation and NumPy implementation of a multi-layer perceptron without automatic differentiation, validated against two-sided numerical gradient checking.
 - **Laboratory 03 (DNN Architectures & Cost):** Comparative study of MLP, CNN, and Vision Transformer models on Fashion-MNIST, contrasting manual FLOP derivations with `thop` MAC metrics.
 - **Laboratory 04 (Data Engineering Integrity):** Production ETL architecture implementing lossless raw ingestion, schema contract enforcement, and leakage-free transformations.
+- **Laboratory 05 (Automatic Differentiation & Compilers):** Tape-free scalar autodiff graph, analytical gradient verification against PyTorch, and TorchDynamo runtime profiling.
+- **Laboratory 07 (Model Compression & Distillation):** Global/layer-wise magnitude pruning, structured filter reduction, SIMD vectorization latency profiling, and Hinton knowledge distillation (T=4.0).
 
 ## Repository Layout
 ```
@@ -22,7 +24,8 @@ This coursework repository explores the intersection of deep learning algorithms
 ├── lab02/    # Scratch neural network engine and gradient check logs
 ├── lab03/    # Deep architectures, handwritten calculations, and Pareto frontier curves
 ├── lab04/    # Production data transformer, audit reports, and serialized pipeline
-└── lab05/    # Tape-free scalar autodiff, PyTorch validation, graph tracing & memory strides
+├── lab05/    # Tape-free scalar autodiff, PyTorch validation, graph tracing & memory strides
+└── lab07/    # Advanced model compression, microarchitectural latency bounds & distillation
 ```
 
 ## Quickstart Guide

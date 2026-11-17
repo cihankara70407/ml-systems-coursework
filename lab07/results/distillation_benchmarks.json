@@ -1,0 +1,24 @@
+{
+  "teacher_reference": {
+    "parameters": 1158602,
+    "accuracy": 0.883,
+    "latency_ms": 89.20429996214807,
+    "storage_kb": 4536.8203125
+  },
+  "distilled_student": {
+    "parameters": 97583,
+    "accuracy": 0.8824,
+    "latency_ms": 2.9579499969258904,
+    "storage_kb": 390.56640625,
+    "train_time_sec": 36.61064460000489
+  },
+  "vanilla_student": {
+    "parameters": 97583,
+    "accuracy": 0.8843,
+    "latency_ms": 13.80409998819232,
+    "train_time_sec": 19.182900400017388
+  },
+  "accuracy_gain": -0.0019000000000000128,
+  "parameter_compression": 11.872990172468565,
+  "throughput_gain": 30.157473944743977
+}

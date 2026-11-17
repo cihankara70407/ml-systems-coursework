@@ -182,3 +182,4 @@ According to Reddi Chapter 7, graph compilers (e.g., TorchDynamo, XLA, TVM, MLIR
 - [moon_experiment.py](file:///C:/Users/Tuan/.gemini/antigravity/scratch/ml_systems_cihan/lab05/src/moon_experiment.py): 5-run benchmark on `make_moons`.
 - [pytorch_profiling.py](file:///C:/Users/Tuan/.gemini/antigravity/scratch/ml_systems_cihan/lab05/src/pytorch_profiling.py): Graph tracing, eager vs. traced latency, and memory stride analysis.
 - `results/`: Contains [gradient_audit.json](file:///C:/Users/Tuan/.gemini/antigravity/scratch/ml_systems_cihan/lab05/results/gradient_audit.json), [moons_empirical_comparison.json](file:///C:/Users/Tuan/.gemini/antigravity/scratch/ml_systems_cihan/lab05/results/moons_empirical_comparison.json), and [pytorch_runtime_audit.json](file:///C:/Users/Tuan/.gemini/antigravity/scratch/ml_systems_cihan/lab05/results/pytorch_runtime_audit.json).
+

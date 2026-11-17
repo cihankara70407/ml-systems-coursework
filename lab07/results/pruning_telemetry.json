@@ -1,0 +1,116 @@
+{
+  "global_magnitude": [
+    {
+      "sparsity_ratio": 0.0,
+      "pre_ft_accuracy": 0.883,
+      "post_ft_accuracy": 0.883,
+      "median_latency_ms": 83.083550009178,
+      "compressed_size_kb": 4204.2333984375,
+      "raw_size_kb": 4536.515625,
+      "compression_factor": 1.0790351522077706
+    },
+    {
+      "sparsity_ratio": 0.25,
+      "pre_ft_accuracy": 0.8814,
+      "post_ft_accuracy": 0.9065,
+      "median_latency_ms": 89.10569999716245,
+      "compressed_size_kb": 3445.06640625,
+      "raw_size_kb": 4536.5458984375,
+      "compression_factor": 1.316823934135885
+    },
+    {
+      "sparsity_ratio": 0.5,
+      "pre_ft_accuracy": 0.8826,
+      "post_ft_accuracy": 0.9048,
+      "median_latency_ms": 94.12940000765957,
+      "compressed_size_kb": 2511.4404296875,
+      "raw_size_kb": 4536.5458984375,
+      "compression_factor": 1.806352181326469
+    },
+    {
+      "sparsity_ratio": 0.75,
+      "pre_ft_accuracy": 0.8775,
+      "post_ft_accuracy": 0.9064,
+      "median_latency_ms": 40.9213500097394,
+      "compressed_size_kb": 1480.6416015625,
+      "raw_size_kb": 4536.5458984375,
+      "compression_factor": 3.0639054675014856
+    },
+    {
+      "sparsity_ratio": 0.9,
+      "pre_ft_accuracy": 0.8276,
+      "post_ft_accuracy": 0.9019,
+      "median_latency_ms": 49.42814997048117,
+      "compressed_size_kb": 781.4658203125,
+      "raw_size_kb": 4536.5458984375,
+      "compression_factor": 5.805175070386806
+    },
+    {
+      "sparsity_ratio": 0.95,
+      "pre_ft_accuracy": 0.7174,
+      "post_ft_accuracy": 0.8942,
+      "median_latency_ms": 84.92895000381395,
+      "compressed_size_kb": 528.8828125,
+      "raw_size_kb": 4536.5458984375,
+      "compression_factor": 8.577601296955551
+    }
+  ],
+  "layerwise_magnitude": [
+    {
+      "sparsity_ratio": 0.0,
+      "pre_ft_accuracy": 0.883,
+      "post_ft_accuracy": 0.883,
+      "median_latency_ms": 86.04874997399747
+    },
+    {
+      "sparsity_ratio": 0.25,
+      "pre_ft_accuracy": 0.8052,
+      "post_ft_accuracy": 0.9061,
+      "median_latency_ms": 88.58989999862388
+    },
+    {
+      "sparsity_ratio": 0.5,
+      "pre_ft_accuracy": 0.8691,
+      "post_ft_accuracy": 0.9015,
+      "median_latency_ms": 85.4651499830652
+    },
+    {
+      "sparsity_ratio": 0.75,
+      "pre_ft_accuracy": 0.4479,
+      "post_ft_accuracy": 0.8794,
+      "median_latency_ms": 77.03630003379658
+    },
+    {
+      "sparsity_ratio": 0.9,
+      "pre_ft_accuracy": 0.1,
+      "post_ft_accuracy": 0.786,
+      "median_latency_ms": 40.93670001020655
+    },
+    {
+      "sparsity_ratio": 0.95,
+      "pre_ft_accuracy": 0.1,
+      "post_ft_accuracy": 0.6414,
+      "median_latency_ms": 41.816850018221885
+    }
+  ],
+  "structured_l2_filter": [
+    {
+      "channel_sparsity": 0.1,
+      "pre_ft_accuracy": 0.846,
+      "post_ft_accuracy": 0.9058,
+      "median_latency_ms": 53.47069998970255
+    },
+    {
+      "channel_sparsity": 0.25,
+      "pre_ft_accuracy": 0.388,
+      "post_ft_accuracy": 0.9043,
+      "median_latency_ms": 12.997150013688952
+    },
+    {
+      "channel_sparsity": 0.5,
+      "pre_ft_accuracy": 0.3082,
+      "post_ft_accuracy": 0.8908,
+      "median_latency_ms": 14.834900008281693
+    }
+  ]
+}
